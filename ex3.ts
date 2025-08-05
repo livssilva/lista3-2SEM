@@ -11,7 +11,7 @@ let gasolina = 0;
 let diesel = 0;
 let codigo = 0;
 
-while (codigo !== 4) {
+while (codigo != 4) {
     codigo = parseInt(teclado("Informe o tipo de combustível (1- Álcool, 2- Gasolina, 3- Diesel, 4- Fim): "));
     
     if (codigo == 1) {
@@ -20,7 +20,7 @@ while (codigo !== 4) {
         gasolina++;
     } else if (codigo == 3) {
         diesel++;
-    } else if (codigo !== 4) {
+    } else if (codigo != 4) {
         console.log("Código inválido. Tente novamente.");
     }
 }
