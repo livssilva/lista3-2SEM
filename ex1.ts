@@ -6,15 +6,14 @@ Para cada leitura de senha  incorreta informada, escrever a mensagem "Senha Inva
 
 const teclado = require(`prompt-sync`)();
 
-let senha: number = 2002
-let tentativa: number = 0;
+let senha: number = 0;
 
-while (tentativa != senha) {
-    let tentativa: number = parseInt(teclado(`Digite a senha: `));
-    if (tentativa != senha) {
+do {
+    senha = parseInt(teclado(`Digite a senha: `));
+    if (senha != 2002) {
         console.log(`Senha Inválida.`);
     }
     else {
         console.log(`Acesso Permitido.`);
     }
-}
+} while (senha != 2002)
